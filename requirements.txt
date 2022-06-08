@@ -1,0 +1,4 @@
+selenium
+tqdm
+python-decouple
+chromedriver-py==101.0.4951.41
