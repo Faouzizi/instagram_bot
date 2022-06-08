@@ -22,15 +22,12 @@ class InstagramBot:
     def set_up_driver(self, mu):
         # Define instagram url
         insta_url = "https://www.instagram.com/?hl=fr"
-        # Define the path of your webdrive
-        # path_downloaded_webdriver = '/usr/bin/chromedriver'
-        path_downloaded_webdriver = '/Users/elmbarki/Downloads/chromedriver'
+        # Define the path of your webdriv
         path_downloaded_webdriver = binary_path
-        # service_object = Service(binary_path)
         chrome_options = Options()
-        # chrome_options.add_argument('--headless')
-        # chrome_options.add_argument('--no-sandbox')
-        # chrome_options.add_argument('--disable-dev-shm-usage')
+        chrome_options.add_argument('--headless')
+        chrome_options.add_argument('--no-sandbox')
+        chrome_options.add_argument('--disable-dev-shm-usage')
         # Call our Webdriver
         driver = webdriver.Chrome(path_downloaded_webdriver, options=chrome_options)  #
         time.sleep(mu)
